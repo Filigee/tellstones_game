@@ -1,0 +1,90 @@
+:root{
+    --colour-dark-purple: #6C4AB6;
+    --colour-light-purple: #8D72E1;
+    --colour-violet: #8D9EFF;
+    --colour-light-blue: #B9E0FF;
+    --colour-cream: #E6E2C3;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--colour-dark-purple);
+}
+
+.rulebook{
+    font-size: 20px;
+}
+
+.rulebook > a{
+    color: black;
+    text-decoration: none;
+}
+
+.start_area_wrapper{
+    display: flex;
+}
+
+.board, .coin_start_area{
+    display: flex;
+    width: 60%;
+    height: 20vh;
+    background: var(--colour-light-purple);
+    border-radius: 10px;
+    margin: 10% auto 0;
+}
+
+.points_wrapper{
+    margin: 13% 100px 0;
+}
+
+.points_wrapper > span{
+    font-size: 20px;
+    padding: 25px;
+}
+
+.board > div, .coin_start_area > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.28%;
+    border: 1px dashed var(--colour-violet);
+    border-radius: 10px;
+}
+
+.coin_start_area > div{
+    width: 16.66%;
+}
+
+.coin__flip-side{
+    background: gainsboro;
+    border: 2px solid darkblue;
+    border-radius: 360px;
+}
+
+.player_one_points, .player_two_points{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.player_points_border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--colour-light-blue);
+    border-radius: 360px;
+}
+
+.player_points_inner{
+    width: 25px;
+    height: 25px;
+    background: var(--colour-cream);
+    border-radius: 360px;
+}
