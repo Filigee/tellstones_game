@@ -25,6 +25,13 @@ body{
     text-decoration: none;
 }
 
+.peek_history{
+    width: 100%;
+    border: 1px solid black;
+    margin: 30px auto 0;
+    font-size: 20px;
+}
+
 .start_area_wrapper{
     display: flex;
 }
@@ -35,12 +42,13 @@ body{
     height: 20vh;
     background: var(--colour-light-purple);
     border-radius: 10px;
-    margin: 10% auto 0;
+    margin: 9% auto 0;
 }
 
 .points_wrapper{
     margin: 13% 100px 0;
 }
+
 
 .points_wrapper > span{
     font-size: 20px;
@@ -60,9 +68,9 @@ body{
     width: 16.66%;
 }
 
-.coin__flip-side{
-    background: gainsboro;
-    border: 2px solid darkblue;
+.stone__flip-side{
+    background: var(--colour-cream);
+    border: 2px solid var(--colour-dark-purple);
     border-radius: 360px;
 }
 
@@ -82,9 +90,12 @@ body{
     border-radius: 360px;
 }
 
-.player_points_inner{
-    width: 25px;
-    height: 25px;
-    background: var(--colour-cream);
+.point_hidden, .two_point_hidden{
+    width: 24px;
+    height: 24px;
     border-radius: 360px;
+}
+
+.point_active{
+    background: var(--colour-cream);
 }

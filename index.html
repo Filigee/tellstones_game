@@ -11,55 +11,62 @@
 
     <div id="rulebook" class="rulebook"><a href="https://assets.contentstack.io/v3/assets/blt0d5213e3ccf9f400/bltd5de22e9cd4788c5/5f624e7af0d2b04fae76b15e/tellstones-en.pdf" target="_blank" rel="noopener noreferrer">Rulebook</a></div>
 
-    <div id="play_board" class="board">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div>
-            <img src="./imgs/scales.png" alt="" width="115px" height="115px">
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="peek_history">
+        <p>Peek History: </p>
     </div>
+        
+    <div id="playboard" class="board">
+        <div id="board_slot_one" class="board_slots">
 
+        </div>
+        <div id="board_slot_two" class="board_slots"></div>
+        <div id="board_slot_three" class="board_slots"></div>
+        <div id="board_slot_four" class="board_slots">
+            <img id="scales" class="stones" src="./imgs/scales.png" alt="" width="115px" height="115px">
+        </div>
+        <div id="board_slot_five" class="board_slots"></div>
+        <div id="board_slot_six" class="board_slots"></div>
+        <div id="board_slot_seven" class="board_slots"></div>
+    </div>
+        
+    
     <div class="start_area_wrapper">
         <div id="points_wrapper" class="points_wrapper">
             <span>Player 1</span>
             <div id="player_one_points" class="player_one_points">
-                <div id="player_one_border_one" class="player_one_border_one | player_points_border"><div id="player_one_inner_one" class="player_one_inner_one | player_points_inner"></div></div>
-                <div id="player_one_border_two" class="player_one_border_two | player_points_border"><div id="player_one_inner_two" class="player_one_inner_two | player_points_inner"></div></div>
-                <div id="player_one_border_three" class="player_one_border_three | player_points_border"><div id="player_one_inner_three" class="player_one_inner_three | player_points_inner"></div></div>
+                <div class="player_points_border"><div id="player_one_point_one" class="player_one_inner_one player_one_point | point_hidden " ></div></div>
+                <div class="player_points_border"><div id="player_one_point_two" class="player_one_inner_two player_one_point | point_hidden"></div></div>
+                <div class="player_points_border"><div id="player_one_point_three" class="player_one_inner_three player_one_point | point_hidden"></div></div>
             </div>
         </div>
     
         <div id="coin_start_area" class="coin_start_area">
-            <div>
-                <img src="./imgs/crown.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="crown" class="stones" src="./imgs/crown.png" alt="" width="115px" height="115px">
             </div>
-            <div>
-                <img src="./imgs/flag.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="flag" class="stones" src="./imgs/flag.png" alt="" width="115px" height="115px">
             </div>
-            <div>
-                <img src="./imgs/hammer.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="hammer" class="stones" src="./imgs/hammer.png" alt="" width="115px" height="115px">
             </div>
-            <div>
-                <img src="./imgs/horse.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="horse" class="stones" src="./imgs/horse.png" alt="" width="115px" height="115px">
             </div>
-            <div>
-                <img src="./imgs/shield.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="shield" class="stones" src="./imgs/shield.png" alt="" width="115px" height="115px">
             </div>
-            <div>
-                <img src="./imgs/sword.png" alt="" width="115px" height="115px">
+            <div class="start_area">
+                <img id="sword" class="stones" src="./imgs/sword.png" alt="" width="115px" height="115px">
             </div>
         </div>
     
         <div id="points_wrapper" class="points_wrapper">
             <span>Player 2</span>
             <div id="player_two_points" class="player_two_points">
-                <div id="player_two_border_one" class="player_two_border_one | player_points_border"><div id="player_two_inner_one" class="player_two_inner_one | player_points_inner"></div></div>
-                <div id="player_two_border_two" class="player_two_border_two | player_points_border"><div id="player_two_inner_two" class="player_two_inner_two | player_points_inner"></div></div>
-                <div id="player_two_border_three" class="player_two_border_three | player_points_border"><div id="player_two_inner_three" class="player_two_inner_three | player_points_inner"></div></d>
+                <div id="player_two_border_one" class="player_two_border_one | player_points_border"><div id="player_two_point_one" class="player_two_inner_one | two_point_hidden"></div></div>
+                <div id="player_two_border_two" class="player_two_border_two | player_points_border"><div id="player_two_point_two" class="player_two_inner_two | two_point_hidden"></div></div>
+                <div id="player_two_border_three" class="player_two_border_three | player_points_border"><div id="player_two_point_three" class="player_two_inner_three | two_point_hidden"></div></d>
             </div>
         </div>
     </div>
